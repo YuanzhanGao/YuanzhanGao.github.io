@@ -22,6 +22,7 @@
     <script src="assets/js/breakpoints.min.js" async></script>
     <script src="assets/js/util.js" async></script>
     <script src="assets/js/main.js" async></script>
+    <script src="assets/js/Yuanzhan_util.js" async></script>
 
 </head>
 
@@ -32,23 +33,28 @@
 
     <!-- Header -->
     <header id="header">
-        <h2><a href="Project_Repo.html">Project Repo</a></h2>
+        <h2 lang="en"><a href="index.html">Project Repo</a></h2>
+        <h2 lang="zh"><a href="index.html">个人项目</a></h2>
         <nav>
-            <a href="#menu">Menu</a>
-            <button id = "lang-switch">English</button>
+            <a lang="en" href="#menu">Menu</a>
+            <a lang="zh" href="#menu">菜单</a>
+            <button id="lang-switch">中文</button>
         </nav>
     </header>
 
     <!-- Menu -->
     <nav id="menu">
         <div class="inner">
-            <h2>Menu</h2>
+            <h2 lang="en">Menu</h2>
+            <h2 lang="zh">菜单</h2>
             <ul class="links">
-                <li><a href="index.html">About</a></li>
-                <li><a href="CV.html">CV & Resume</a></li>
-                <li><a href="Project_Repo.html">Project Repo</a></li>
+                <li lang="en"><a href="index.html">About</a></li>
+                <li lang="zh"><a href="index.html">关于我</a></li>
+                <li lang="en"><a href="CV.html">CV & Resume</a></li>
+                <li lang="zh"><a href="CV.html">个人简历</a></li>
+                <li lang="en"><a href="Project_Repo.html">Project Repo</a></li>
+                <li lang="zh"><a href="Project_Repo.html">个人项目</a></li>
             </ul>
-            <a href="#" class="close">Close</a>
         </div>
     </nav>
 
@@ -56,8 +62,8 @@
     <section id="banner">
         <header>
             <div class="inner">
-                <h2 lang = "en">Project Repo</h2>
-                <h2 lang = "zh">项目展示</h2>
+                <h2 lang="en">Project Repo</h2>
+                <h2 lang="zh">个人项目</h2>
                 <p lang="en">This page will contain a summary of Yuanzhan's projects. Still under construction...</p>
                 <p lang="zh">本页用于展示我过去做过的一些个人认为有趣的项目。本页目前仍在创建中，敬请期待！</p>
             </div>
@@ -155,35 +161,6 @@
     </section>
 
 </div>
-
-
-    <script>
-    $(document).ready(function() {
-      // Initial language state
-      var currentLanguage = 'en';
-      $('[lang="zh"]').toggle();
-
-      // Language toggle function
-      function toggleLanguage() {
-        if (currentLanguage === 'en') {
-          $('[lang="en"]').toggle();
-          $('[lang="zh"]').toggle();
-          currentLanguage = 'zh';
-          $('#lang-switch').text("English");
-        } else {
-          $('[lang="zh"]').toggle();
-          $('[lang="en"]').toggle();
-          currentLanguage = 'en';
-          $('#lang-switch').text("中文");
-        }
-          }
-
-      $('#lang-switch').click(toggleLanguage);
-
-    });
-
-
-    </script>
 
 </body>
 </html>
