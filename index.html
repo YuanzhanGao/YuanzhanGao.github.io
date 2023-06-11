@@ -12,6 +12,15 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		    <!-- Scripts -->
+
+		<script src="assets/js/jquery.min.js" async></script>
+		<script src="assets/js/jquery.scrollex.min.js" async></script>
+		<script src="assets/js/browser.min.js" async></script>
+		<script src="assets/js/breakpoints.min.js" async></script>
+		<script src="assets/js/util.js" async></script>
+		<script src="assets/js/main.js" async></script>
 	</head>
 
 	<body class="is-preload">
@@ -24,6 +33,7 @@
 						<h2><a href="index.html">About</a></h2>
 						<nav>
 							<a href="#menu">Menu</a>
+							<button id = "lang-switch">English</button>
 						</nav>
 					</header>
 
@@ -46,30 +56,45 @@
 								<img src = "images/Selfie_cropped.jpg" alt="selfie" width = "300" height = "270">
 							</div>
 
-							<h2 style = "text-align: center;">Yuanzhan Gao</h2>
+							<h2 lang = "en" style = "text-align: center;">Yuanzhan Gao</h2>
+							<h2 lang = "zh" style = "text-align: center;">高远沾</h2>
 
 							<p style = "text-align: center;">
 								<a href = "https://github.com/notright123" target = "_blank" class="fa fa-github" style="font-size:20px"> Github</a>&nbsp;&nbsp;&nbsp;
-								<a href = "https://www.linkedin.com/in/yuanzhan-gao-8056b8202/" target = "_blank" class="fa fa-linkedin-square" style="font-size:20px"> LinkedIn</a>
+								<a lang = "en" href = "https://www.linkedin.com/in/yuanzhan-gao-8056b8202/" target = "_blank" class="fa fa-linkedin-square" style="font-size:20px"> LinkedIn</a>
+								<a lang = "zh" href = "https://www.linkedin.com/in/yuanzhan-gao-8056b8202/" target = "_blank" class="fa fa-linkedin-square" style="font-size:20px"> 领英主页</a>
 							</p>
 						</div>
 
 						<div class = "inner">
 							<div class = "content">
-								<p>
+								<p lang = "en">
 									Hi! My name is Yuanzhan Gao and I am a 4th year undergraduate student at the University of Virginia (graduating in Fall 2023)
 								double majoring in Computer Science (BA) and Economics (Financial Concentration). My interests lie
 								broadly in the fields of Data Science and Machine Learning, and specifically how applications of such
 								technologies can provide more efficient business solutions to the finance and management consulting industries.
 									You can find an English version CV/resume of mine <strong><a href = "documents/YuanzhanGao_resume_Summer2023.pdf" target = "_blank" style = "color:#ADD8E6;">here</a></strong>.
 								</p>
-								<p>
+								<p lang = "zh">
+									您好！我的名字是高远沾，是弗吉尼亚大学的大四本科生（预计于2023年秋季毕业），主修计算机科学和金融经济学。
+									我对数据科学和机器学习领域有广泛的兴趣，特别是如何将这些技术应用于金融和管理咨询行业，为其提供更高效的商业解决方案。
+									您可以在<strong><a href = "documents/YuanzhanGao_resume_Summer2023.pdf" target = "_blank" style = "color:#ADD8E6;">这里</a></strong>找到我的简历。
+
+								</p>
+								<p lang = "en">
 									If you are interested in my works and experiences and want to discuss more, feel free to contact me at
 									<a href = "mailto: yg8ch@virginia.edu">yg8ch@virginia.edu</a> (work email) or
 									<a href = "mailto: jamesgao010510@gmail.com">jamesgao010510@gmail.com</a> (personal email). If you are in China,
 									you can also reach me at <a href = "mailto: 1505841192@qq.com">1505841192@qq.com</a> (QQ personal email for those
 									who can't access Gmail).
 								</p>
+
+								<p lang = "zh">
+									如果您对我过去的工作经验感兴趣并想进一步讨论，请通过<a href="mailto:yg8ch@virginia.edu">yg8ch@virginia.edu</a>（工作邮箱）
+									或 <a href="mailto:jamesgao010510@gmail.com">jamesgao010510@gmail.com</a>（个人邮箱）来联系我。如果您在中国无法使用
+									Gmail，您也可以通过<a href="mailto:1505841192@qq.com">1505841192@qq.com</a>来联系我。
+								</p>
+
 							</div>
 						</div>
 
@@ -87,13 +112,36 @@
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Scripts -->
+
+			<script>
+			$(document).ready(function() {
+			  // Initial language state
+			  var currentLanguage = 'en';
+			  $('[lang="zh"]').toggle();
+
+			  // Language toggle function
+			  function toggleLanguage() {
+				if (currentLanguage === 'en') {
+				  $('[lang="en"]').toggle();
+				  $('[lang="zh"]').toggle();
+				  currentLanguage = 'zh';
+				  $('#lang-switch').text("English");
+				} else {
+				  $('[lang="zh"]').toggle();
+				  $('[lang="en"]').toggle();
+				  currentLanguage = 'en';
+				  $('#lang-switch').text("中文");
+				}
+				  }
+
+			  $('#lang-switch').click(toggleLanguage);
+
+			});
+
+
+			</script>
+
 
 	</body>
 </html>
