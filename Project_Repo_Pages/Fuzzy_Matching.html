@@ -6,13 +6,16 @@
 -->
 <html>
 <head>
-    <title>Yuanzhan's Project Repo</title>
+    <title>Fuzzy Matching At Scale</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="../assets/css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
+        <link rel="stylesheet" href="../assets/css/noscript.css"/>
     </noscript>
     <!-- Scripts -->
 
@@ -28,27 +31,14 @@
         <h2 lang="en">Project Repo</h2>
         <h2 lang="zh">个人项目</h2>
         <nav>
-            <a lang="en" href="#menu">Menu</a>
-            <a lang="zh" href="#menu">菜单</a>
+            <a lang="en" href="../Project_Repo.html">Back</a>
+            <a lang="zh" href="../Project_Repo.html">返回项目列表</a>
             <button id="lang-switch">中文版</button>
         </nav>
     </header>
 
-    <!-- Menu -->
-    <nav id="menu">
-        <div class="inner">
-            <h2 lang="en">Menu</h2>
-            <h2 lang="zh">菜单</h2>
-            <ul class="links">
-                <li lang="en"><a href="index.html">About</a></li>
-                <li lang="zh"><a href="index.html">关于我</a></li>
-                <li lang="en"><a href="CV.html">CV & Resume</a></li>
-                <li lang="zh"><a href="CV.html">个人简历</a></li>
-                <li lang="en"><a href="Project_Repo.html">Project Repo</a></li>
-                <li lang="zh"><a href="Project_Repo.html">个人项目</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Simply set the `src` attribute to your MD file and win -->
+    <zero-md src="README_FuzzyMatching.md"></zero-md>
 
     <!-- Wrapper -->
     <section id="banner">
@@ -87,16 +77,16 @@
 
                 <section class="features">
                     <article>
-                        <a class="image"><img src="images/fuzzy_matching.png" alt=""/></a>
+                        <a class="image"><img src="" alt=""/></a>
                         <h3 class="major">Fuzzy Matching At Scale</h3>
                         <p>Last Updated: 4/20/2023</p>
                         <p>Oftentimes data analysts need to merge datasets with identifiers that are close but
                         not exactly the same. When the generic Python fuzzy-matching modules cannot handle the
                             O(n<sup>2</sup>) time complexity operation of comparison, we need to do something else.</p>
-                        <a href="Project_Repo_Pages/Fuzzy_Matching.html" class="special">Learn more</a>
+                        <a href="#" class="special">Learn more</a>
                     </article>
                     <article>
-                        <a href="#" class="image"><img src="images/pic05.jpg" alt=""/></a>
+                        <a href="#" class="image"><img src="" alt=""/></a>
                         <h3 class="major">Nisl placerat</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
                             ultrices.</p>
@@ -109,60 +99,15 @@
 
     </section>
 
-<!--    &lt;!&ndash; Footer &ndash;&gt;-->
-<!--    <section id="footer">-->
-<!--        <div class="inner">-->
-<!--            <h2 class="major">Get in touch</h2>-->
-<!--            <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce-->
-<!--                tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in-->
-<!--                tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>-->
-<!--            <form method="post" action="#">-->
-<!--                <div class="fields">-->
-<!--                    <div class="field">-->
-<!--                        <label for="name">Name</label>-->
-<!--                        <input type="text" name="name" id="name"/>-->
-<!--                    </div>-->
-<!--                    <div class="field">-->
-<!--                        <label for="email">Email</label>-->
-<!--                        <input type="email" name="email" id="email"/>-->
-<!--                    </div>-->
-<!--                    <div class="field">-->
-<!--                        <label for="message">Message</label>-->
-<!--                        <textarea name="message" id="message" rows="4"></textarea>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <ul class="actions">-->
-<!--                    <li><input type="submit" value="Send Message"/></li>-->
-<!--                </ul>-->
-<!--            </form>-->
-<!--            <ul class="contact">-->
-<!--                <li class="icon solid fa-home">-->
-<!--                    Untitled Inc<br/>-->
-<!--                    1234 Somewhere Road Suite #2894<br/>-->
-<!--                    Nashville, TN 00000-0000-->
-<!--                </li>-->
-<!--                <li class="icon solid fa-phone">(000) 000-0000</li>-->
-<!--                <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>-->
-<!--                <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>-->
-<!--                <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>-->
-<!--                <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>-->
-<!--            </ul>-->
-<!--            <ul class="copyright">-->
-<!--                <li>&copy; Untitled Inc. All rights reserved.</li>-->
-<!--                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </section>-->
 
 </div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/Yuanzhan_util.js"></script>
-
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/Yuanzhan_util.js"></script>
 </body>
 </html>
