@@ -1,5 +1,7 @@
 
-$(document).ready(function() {
+// add a language switch button
+$(document).ready(
+function() {
 			  // Initial language state
 			  var currentLanguage = localStorage.getItem("lanVar");
 
@@ -35,4 +37,18 @@ $(document).ready(function() {
 
 			  $('#lang-switch').click(toggleLanguage);
 
-});
+
+			  // minutes to read
+              function readingTime() {
+                  const text = $('p').text();
+                  const wpm = 225;
+                  const words = text.trim().split(/\s+/).length;
+                  const time = Math.ceil(words / wpm);
+                  $('#time').text(time);
+                }
+
+              readingTime();
+
+}
+
+);
