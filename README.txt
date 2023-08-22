@@ -1,4 +1,8 @@
-This is Yuanzhan Gao's personal website. The original contribution is below:
+This is Yuanzhan Gao's personal website. The original contribution is below.
+As of 8/22/2023, the original template has been modified greatly by me with
+many additional CSS and Javascript codes added. I consider this personal project
+to be a showcase of my skills in front-end development rather than just a simple
+online portofolio.
 
 
 _______________________________________________________________________________________________________________________________________
