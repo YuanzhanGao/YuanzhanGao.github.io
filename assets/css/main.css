@@ -27,7 +27,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+	}
 
 body {
 	line-height: 1;
@@ -3412,7 +3413,7 @@ input, select, textarea {
 				width: 2.25em;
 			}
 
-		#banner h2 {
+		#banner h2{
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
@@ -3436,7 +3437,7 @@ input, select, textarea {
 			padding-bottom: 0.4em;
 		}
 
-		#banner p {
+		#banner p, #banner article, #banner .collapsible, #banner hr{
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
@@ -3459,7 +3460,6 @@ input, select, textarea {
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			/*text-transform: lowercase;*/
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3535,7 +3535,7 @@ input, select, textarea {
 			filter: blur(2px);
 		}
 
-		body.is-preload #banner p {
+		body.is-preload #banner p, body.is-preload #banner article, body.is-preload #banner .collapsible, body.is-preload #banner hr{
 			opacity: 0;
 			-moz-transform: translateX(0.5em);
 			-webkit-transform: translateX(0.5em);
@@ -4156,3 +4156,48 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* 8/20/2023: Add Collapsible functionalities*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #686868;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 10px;s
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #505050;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapseContent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-image: url('../../images/pic08.jpg');
+
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
