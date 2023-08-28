@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f00db41-8ed9-4216-8133-89c2c93885e4" name="Changes" comment="Update Project Repo for the Fuzzy Matching project">
-      <change afterPath="$PROJECT_DIR$/Project_Repo_Pages/mySQL_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Repo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Repo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV.html" beforeDir="false" afterPath="$PROJECT_DIR$/CV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/james/Desktop/Econ_Research/patawari",
+    "last_opened_file_path": "C:/Users/james/Desktop/GitHub Personal Webpage/html5up-solid-state",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
